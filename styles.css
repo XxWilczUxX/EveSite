@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+a:visited {
+    color: unset;
+}
+
 .flexbox {
     display:flex;
 }
@@ -126,14 +130,30 @@ main > div {
     margin: 1vh auto;
     margin-top: 4vh;
     font-size: 1.25rem;
-    justify-content: center;
-    height: 40vh;
+    min-height: 35vh;
     text-align: center;
     flex-direction: column;
+    max-height: fit-content;
 }
 
 main > div > p {
     text-align: center;
     margin: 0 auto;
     width: 95%;
+}
+
+.banner ul  {
+    height: 100%;
+}
+
+.banner ul li {
+    background-color: white;
+    height: 100%;
+    width: 15vw;
+    margin: 0 0.5vw;
+    display: inline-block;
+}
+
+.content li{
+    margin: 5vh auto;
 }
