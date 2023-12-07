@@ -84,7 +84,9 @@ footer {
 }
 
 .social-logo {
-    width: 1vw
+    width: 1vw;
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
 }
 
 main {
@@ -120,9 +122,28 @@ h3 {
     width: 96%;
     height: 30vh;
     border-radius: 5vh;
+    justify-content: center;
 }
 
-.banner > img{
+.banner2 {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 96%;
+    height: 30vh;
+    border-radius: 5vh;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner2 img{
+    height:30vh;
+    margin: 0 2.5vw;
+}
+
+.transform img{
     transform:translateY(-30%);
 }
 
@@ -156,4 +177,17 @@ main > div > p {
 
 .content li{
     margin: 5vh auto;
+}
+
+thead tr th{
+    width: 15vw;
+    font-size: 2rem;
+    height: 15vh;
+}
+
+tbody tr {
+    height: 10vh;
+}
+a {
+    color: unset;
 }
